@@ -10,3 +10,4 @@
 #rmdir remove directory
 # ls -al ./ ../ /boot to list all files with hidden
 #file used to print type of file
+#ln to create symbolic link
