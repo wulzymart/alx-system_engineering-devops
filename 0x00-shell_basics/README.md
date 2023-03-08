@@ -7,3 +7,4 @@
 #mkdir to create a directory
 #mv to move or rename
 #rm to remove files
+#rmdir remove directory
