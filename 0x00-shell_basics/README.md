@@ -6,3 +6,4 @@
 #ls -n lists long format with user and group ids displayed numerically
 #mkdir to create a directory
 #mv to move or rename
+#rm to remove files
