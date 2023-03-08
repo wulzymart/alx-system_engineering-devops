@@ -5,3 +5,4 @@
 #ls -la to list hidden files in long format
 #ls -n lists long format with user and group ids displayed numerically
 #mkdir to create a directory
+#mv to move or rename
