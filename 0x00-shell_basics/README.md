@@ -8,3 +8,4 @@
 #mv to move or rename
 #rm to remove files
 #rmdir remove directory
+# ls ./ ../ /boot to list all files with hidden
