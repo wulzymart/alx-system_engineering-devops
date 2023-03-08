@@ -12,3 +12,4 @@
 #file used to print type of file
 #ln to create symbolic link
 cp -u copy or update file
+#[[:upper:]]* all starting with uppercase
