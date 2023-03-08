@@ -11,3 +11,4 @@
 # ls -al ./ ../ /boot to list all files with hidden
 #file used to print type of file
 #ln to create symbolic link
+cp -u copy or update file
