@@ -38,5 +38,4 @@ then
    start
 else
     echo "Usage: manage_my_process {start|stop|restart}"
-    exit
 fi
