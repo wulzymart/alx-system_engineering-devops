@@ -5,7 +5,7 @@
 
 # In between each iteration of the loop, add a sleep 2
 
-while ((1)); do
+while true; do
 echo "To infinity and beyond"
 sleep 2
 done
