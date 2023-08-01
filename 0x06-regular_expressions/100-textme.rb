@@ -1,2 +1,6 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/\[from:(.*?)\] \[to:(.*?)\] \[flags:((-?\d:?){5})\]/).join(",")
+sender = ARGV[0][/\[from:(\+?\w*?)\]/, 1]
+receiver = ARGV[0][/\[to:(\+?\w*?)\]/, 1]
+flags = ARGV[0][/ \[flags:((-?\d:?){5})\]/, 1]
+
+puts "#{sender},#{receiver},#{flags}"
