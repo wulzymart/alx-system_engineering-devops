@@ -1,4 +1,7 @@
 # install and configure an Nginx server using Puppet
+package {'nginx':
+  ensure => 'present',
+}
 exec {'update apt-get and install':
     command  => 'sudo apt-get update && sudo apt-get install nginx',
     path     => '/usr/bin:/usr/sbin:/bin',
