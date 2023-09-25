@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Script that configures a new Ubuntu machine
 if ! nginx -v; then
 sudo apt-get update
