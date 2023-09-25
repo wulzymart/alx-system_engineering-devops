@@ -1,3 +1,4 @@
+# updates ssh config file
 file { '/etc/ssh/ssh_config':
     ensure  => 'present',
 }->
