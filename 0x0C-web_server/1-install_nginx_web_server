@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# installs a NGINX web server with hello world page
+
+if ! nginx -v; then
+apt-get update
+apt-get install -y nginx
+fi
+echo "Hello World!" > /var/www/html/index.html
+ufw allow 'NGINX Full'
+sudo service nginx restart
