@@ -2,3 +2,4 @@
 # get apache to run on a container
 echo "ServerName localhost" >> /etc/apache2.conf
 sudo service apache start
+service apache2 status
