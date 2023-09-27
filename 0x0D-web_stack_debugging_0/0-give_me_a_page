@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # get apache to run on a container
-echo "ServerName localhost" >> /etc/apache2.conf
-sudo service apache start
 service apache2 status
+sudo service apache start
+
