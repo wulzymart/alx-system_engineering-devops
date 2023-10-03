@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 #Create a new Nginx with new server
 
-if ! nginx -v; then
 sudo apt-get update
 sudo apt-get install -y nginx
-fi
 
 # setup home
 echo "Hello World!" | sudo tee /var/www/html/index.html
