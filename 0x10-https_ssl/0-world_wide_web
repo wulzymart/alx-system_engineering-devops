@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# script that displays domain information
+get_dns_info() {
+    local domain="$1"
+    local subdomain="$2"
+    local script
+    script=$(dig "$subdomain"."$domain" | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -2 | tr '\n' ' ')
+    echo "$subdomain" "$script" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}' 
+}
+
+if [ "$#" -eq 1 ]; then 
+    get_dns_info "$1" "www"
+    get_dns_info "$1" "lb-01"
+    get_dns_info "$1" "web-01"
+    get_dns_info "$1" "web-02"
+elif [ "$#" -gt 1 ]; then
+echo "here"
+    get_dns_info "$1" "$2"
+fi
