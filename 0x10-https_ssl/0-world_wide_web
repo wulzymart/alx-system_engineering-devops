@@ -14,6 +14,5 @@ if [ "$#" -eq 1 ]; then
     get_dns_info "$1" "web-01"
     get_dns_info "$1" "web-02"
 elif [ "$#" -gt 1 ]; then
-echo "here"
     get_dns_info "$1" "$2"
 fi
