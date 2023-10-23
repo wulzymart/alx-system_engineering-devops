@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """REST API for employees"""
 
-import requests
 import json
+import requests
 from sys import argv
 
 
