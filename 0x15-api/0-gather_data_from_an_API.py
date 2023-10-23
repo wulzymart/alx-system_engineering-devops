@@ -11,7 +11,7 @@ if __name__ == '__main__':
     url = f'{baseUrl}/{requested_employee_id}'
 
     employee = requests.get(url).json()
-    employee_name = employee.get('username')
+    employee_name = employee.get('name')
 
     todoUrl = f"{url}/todos"
     tasks = requests.get(todoUrl).json()
