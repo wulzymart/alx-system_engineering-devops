@@ -9,7 +9,7 @@ from requests import get
 def number_of_subscribers(subreddit):
     """
     queries the Reddit API and returns the number of subscribers
-    for a given subreddit. 
+    for a given subreddit.
     """
 
     if not subreddit or not isinstance(subreddit, str):
